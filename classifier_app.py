@@ -1,6 +1,5 @@
 # Streamlit dependencies
 import streamlit as st
-from streamlit_option_menu import option_menu
 
 # Data handling dependencies
 import numpy as np
