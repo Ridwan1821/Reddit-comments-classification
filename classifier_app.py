@@ -10,7 +10,6 @@ import os
 import pickle
 import re
 import nltk
-pip install xgboost
 from nltk.corpus import stopwords
 stop = stopwords.words('english')
 from nltk.stem import PorterStemmer
