@@ -10,6 +10,7 @@ import os
 import pickle
 import re
 import nltk
+nltk.download('wordnet')
 from nltk.corpus import stopwords
 stop = stopwords.words('english')
 from nltk.stem import PorterStemmer
@@ -79,7 +80,7 @@ df['comments_to_use'] = df['comments_to_use'].apply(lambda x: clean_punct(x))
 tokeniser = TreebankWordTokenizer()
 df['comments_to_use'] = df['comments_to_use'].apply(tokeniser.tokenize)
 
-# Applying Lammetization
+# Applying Lemmetization
 lemmatizer = WordNetLemmatizer()
 
 # Defining a function that will handle the lematization process
