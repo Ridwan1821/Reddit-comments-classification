@@ -17,6 +17,7 @@ from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 import string
 from nltk.tokenize import word_tokenize, TreebankWordTokenizer
+from xgboost.sklearn import XGBClassifier
 
 img_1 = Image.open('images/image1.png')
 img_2 = Image.open('images/image2.png')
