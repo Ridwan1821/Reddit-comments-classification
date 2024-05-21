@@ -16,6 +16,7 @@ from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 import string
 from nltk.tokenize import word_tokenize, TreebankWordTokenizer
+conda install -c conda-forge py-xgboost
 from xgboost.sklearn import XGBClassifier
 
 img_1 = Image.open('images/image1.png')
