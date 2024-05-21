@@ -91,7 +91,6 @@ nltk==3.7
 numpy==1.23.3
 packaging==21.3
 pandas==1.5.0
-pandas-profiling==3.6.6
 pandocfilters==1.5.0
 parso==0.8.3
 patsy==0.5.3
