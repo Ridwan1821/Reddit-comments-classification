@@ -12,7 +12,7 @@ import re
 import nltk
 nltk.download('wordnet')
 from nltk.corpus import stopwords
-stop = stopwords.words('english')
+stop = stopwords.words('omw-1.4')
 from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 import string
