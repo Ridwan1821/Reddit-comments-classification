@@ -10,9 +10,9 @@ import os
 import pickle
 import re
 import nltk
-nltk.download('wordnet')
+nltk.download('omw-1.4')
 from nltk.corpus import stopwords
-stop = stopwords.words('omw-1.4')
+stop = stopwords.words('english')
 from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 import string
