@@ -17,9 +17,9 @@ from nltk.stem import WordNetLemmatizer
 import string
 from nltk.tokenize import word_tokenize, TreebankWordTokenizer
 
-img_1 = Image.open('images/image1.PNG')
-img_2 = Image.open('images/image2.PNG')
-img_3 = Image.open('images/image3.PNG')
+img_1 = Image.open('image1.PNG')
+img_2 = Image.open('image2.PNG')
+img_3 = Image.open('image3.PNG')
 
 img1 = img_1.resize((1000,300))
 img2 = img_2.resize((1150,300))
