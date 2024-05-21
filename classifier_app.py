@@ -10,7 +10,8 @@ import os
 import pickle
 import re
 import nltk
-from nltk.corpus import stopwords
+nltk.download('stopwords')
+#from nltk.corpus import stopwords
 stop = stopwords.words('english')
 from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
