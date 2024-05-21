@@ -18,9 +18,9 @@ from nltk.stem import WordNetLemmatizer
 import string
 from nltk.tokenize import word_tokenize, TreebankWordTokenizer
 
-img_1 = Image.open('image1.PNG')
-img_2 = Image.open('image2.PNG')
-img_3 = Image.open('image3.PNG')
+img_1 = Image.open('images/image1.PNG')
+img_2 = Image.open('images/image2.PNG')
+img_3 = Image.open('images/image3.PNG')
 
 img1 = img_1.resize((1000,300))
 img2 = img_2.resize((1150,300))
@@ -92,14 +92,14 @@ df['comments_to_use'] = df['comments_to_use'].apply(lemma, args=(lemmatizer, ))
 
 # Vectorizing the data using countVectorizer
 # The pickle file for our vectorizer will be used here instead of creating a new model.
-vect = pickle.load(open("vectorizer.pkl", "rb"))
+vect = pickle.load(open("pickle_files/vectorizer.pkl", "rb"))
 data_vect = vect.transform(df['comments_to_use'].values.astype(str))
 
 # Converting the vectorized data to array
 x_vect = data_vect.toarray()
 
 # Initializing our models for fitting. The pickle file for our model will be used here instead of creating a new model.
-xgb_classifier = pickle.load(open('xgb_model.pkl', 'rb'))
+xgb_classifier = pickle.load(open('pickle_files/xgb_model.pkl', 'rb'))
 
 # Generating predictions
 prediction = xgb_classifier.predict(x_vect)
