@@ -120,7 +120,7 @@ df = df[['username', 'comments', 'label']]
 
 
 st.write('View predictions and scroll down to download result')
-st.write(df, width=1024, height=768)
+st.write(df, width=2000, height=768)
 
 st.write(f"Download predictions")
 csv = df.to_csv(index=False)
