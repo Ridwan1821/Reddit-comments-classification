@@ -16,7 +16,6 @@ from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 import string
 from nltk.tokenize import word_tokenize, TreebankWordTokenizer
-import xgboost
 from xgboost.sklearn import XGBClassifier
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split, cross_val_score
